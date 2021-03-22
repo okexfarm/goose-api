@@ -4,7 +4,7 @@ import kstABI from "./abi/kstToken.json";
 import BigNumber from "bignumber.js";
 
 const web3 = new Web3(process.env.Provider);
-const contract = new web3.eth.Contract(eggABI, process.env.KstAddress);
+const contract = new web3.eth.Contract(kstABI, process.env.KstAddress);
 
 export async function getTotalSupply() {
     try {
